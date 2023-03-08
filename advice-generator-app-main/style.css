@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+	--primary-light-cyan: hsl(193, 38%, 86%);
+	--primary-neon-green: hsl(150, 100%, 66%);
+
+	--grayish-blue: hsl(217, 19%, 38%);
+	--dark-grayish-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+
+	--font-family-manrope: "Manrope", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: var(--font-family-manrope);
+	background: var(--dark-blue);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 500px;
+	background: var(--dark-grayish-blue);
+	border-radius: 10px;
+	position: relative;
+}
+
+.advice-id {
+	color: var(--primary-neon-green);
+	font-size: 18px;
+	padding: 1rem 0;
+}
+
+.advice {
+	font-size: 28px;
+	color: var(--primary-light-cyan);
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.divider {
+	padding: 1rem 0 3rem 0;
+}
+
+.dice {
+	height: 25px;
+	width: 25px;
+}
+
+.dice-btn {
+	background: var(--primary-neon-green);
+	padding: 1rem;
+	border-radius: 50%;
+	display: flex;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	position: absolute;
+	bottom: -30px;
+}
+
+.dice-btn:hover {
+	box-shadow: 0 0 40px var(--primary-neon-green);
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	background: var(--dark-grayish-blue);
+	width: 100%;
+	text-align: center;
+	color: var(--primary-light-cyan);
+	letter-spacing: 1px;
+}
+
+a {
+	color: var(--primary-neon-green);
+}
