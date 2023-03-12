@@ -16,6 +16,24 @@
 	--dark-gray-blue: hsl(224, 30%, 27%);
 }
 
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/assets/fonts/HankenGrotesk-Medium.ttf') format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/assets/fonts/HankenGrotesk-Bold.ttf') format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/assets/fonts/HankenGrotesk-ExtraBold.ttf') format('ttf');
+  font-weight: 800;
+}
+
 *,
 ::after,
 *::before {
@@ -26,6 +44,7 @@
 
 body {
 	background-color: var(--white);
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 
 main {
@@ -51,7 +70,7 @@ main {
 }
 
 p {
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .left > h3 {
@@ -59,6 +78,7 @@ p {
 	opacity: 0.7;
 	position: absolute;
 	top: 8%;
+  font-weight: 500;
 }
 
 .left > h1 {
@@ -72,6 +92,8 @@ p {
 	color: var(--light-lavender);
 	opacity: 0.8;
 	word-spacing: 1px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 500;
 }
 
 .circle {
@@ -87,6 +109,7 @@ p {
 
 .circle > h1 {
 	color: var(--white);
+  font-weight: 700;
 	font-size: 64px;
 	position: absolute;
 	top: 50%;
@@ -95,6 +118,8 @@ p {
 }
 
 .circle > p {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 500;
 	color: var(--light-lavender);
 	opacity: 0.4;
 	position: absolute;
@@ -127,21 +152,29 @@ p {
 }
 
 .reaction-result {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
 	color: var(--primary-red);
 	margin-left: 5px;
 }
 
 .reaction-memory {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
 	color: var(--primary-yellow);
 	margin-left: 5px;
 }
 
 .reaction-verbal {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
 	color: var(--primary-green);
 	margin-left: 5px;
 }
 
 .reaction-visual {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
 	color: var(--primary-blue);
 	margin-left: 5px;
 }
@@ -160,6 +193,17 @@ p {
 
 .visual {
 	background: hsl(234, 85%, 45%, 0.1);
+}
+
+.score {
+  font-family: 'Hanken Grotesk';
+  font-weight: 700;
+}
+
+span {
+  color: var(--dark-gray-blue);
+  font-weight: 700;
+  opacity: 0.6;
 }
 
 button {
